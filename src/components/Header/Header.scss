@@ -1,0 +1,55 @@
+.header {
+    padding: 5% 8%;
+    background-image: url("../../assets/header_img.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    color: white;
+    margin-top: 100px;
+
+    .header-container {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 30px;
+        animation: in-loading 2s;
+
+        h1 {
+            font-size: 50px;
+            line-height: 1.2;
+
+            @media (max-width: 991px) {
+                font-size: 30px;
+            }
+        }
+
+        p {
+            line-height: 1.4;
+            font-size: 17px;
+
+            @media (max-width: 991px) {
+                line-height: 1.1;
+                font-size: 11px;
+            }
+        }
+
+        button {
+            border-radius: 25px;
+            padding: 10px 25px;
+            background: white;
+            border: none;
+            cursor: pointer;
+            width: fit-content;
+            transition: .3s;
+
+            a {
+                color: grey;
+            }
+
+            &:hover {
+                background: rgb(240, 240, 240);
+            }
+        }
+    }
+}

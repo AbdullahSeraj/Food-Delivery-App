@@ -1,0 +1,115 @@
+.cart {
+    width: 82%;
+    padding: 100px 0;
+    margin: 0 auto;
+
+    .table {
+        width: 100%;
+        overflow-x: auto;
+
+        table {
+            width: 100%;
+
+            @media (max-width: 1000px) {
+                width: 900px;
+            }
+
+            thead {
+                tr {
+                    th {
+                        padding: 10px;
+                        border-bottom: 1px solid rgb(201, 201, 201);
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    transition: .3s;
+
+                    td {
+                        padding: 10px 0;
+                        text-align: center;
+                        border-bottom: 1px solid rgb(201, 201, 201);
+
+                        img {
+                            width: 70px;
+                        }
+
+                        i {
+                            font-size: 19px;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: red;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        background: rgb(247, 247, 247);
+                    }
+                }
+            }
+        }
+    }
+
+    .cart-bottom {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 70px;
+
+        .totals {
+
+            .list {
+                padding: 10px 0;
+                display: flex;
+                justify-content: space-between;
+
+                &.list-total {
+                    font-weight: bold;
+                }
+            }
+
+            button {
+                border-radius: 7px;
+                background: orangered;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+        }
+
+        .search-cart {
+
+            .input {
+                margin-top: 10px;
+                display: flex;
+                border-radius: 7px;
+                overflow: hidden;
+
+                input {
+                    padding: 10px 20px;
+                    flex: 1;
+                    font-size: 16px;
+                    outline: none;
+                    border: none;
+                    background: #eee;
+                }
+
+                button {
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    background: orangered;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

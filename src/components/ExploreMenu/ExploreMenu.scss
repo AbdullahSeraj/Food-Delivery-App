@@ -1,0 +1,53 @@
+.explore-menu {
+    margin-top: 40px;
+    border-bottom: 2px solid rgb(228, 228, 228);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+
+    .title {
+        font-size: 30px;
+    }
+
+    .text {
+        line-height: 1.6;
+    }
+
+    .menu {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .list {
+            text-align: center;
+            cursor: pointer;
+
+            &:hover img {
+                transform: scale(1.05);
+            }
+
+            &:hover p,
+            &.active p {
+                color: orangered;
+            }
+
+            &.active img {
+                border-radius: 50%;
+                border: 3px solid orangered;
+                padding: 3px;
+            }
+
+            img {
+                transition: .4s;
+                width: 100px;
+            }
+
+            p {
+                transition: .2s;
+            }
+        }
+
+    }
+}

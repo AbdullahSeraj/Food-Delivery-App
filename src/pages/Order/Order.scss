@@ -1,0 +1,55 @@
+.order {
+    width: 85%;
+    margin: 100px auto 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 150px;
+
+    .left-order {
+        form {
+            display: grid;
+            gap: 20px;
+            margin-top: 20px;
+
+            input {
+                border-radius: 5px;
+                background: white;
+                padding: 8px 20px;
+                width: 100%;
+                border: 1px solid rgb(196, 196, 196);
+                outline-color: gray;
+            }
+
+            .five {
+                display: flex;
+                gap: 20px;
+            }
+        }
+    }
+
+    .right-order {
+        .totals {
+            .list {
+                padding: 10px 0;
+                display: flex;
+                justify-content: space-between;
+
+                &.list-total {
+                    font-weight: bold;
+                }
+            }
+
+            button {
+                border-radius: 7px;
+                background: orangered;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+        }
+    }
+
+}
